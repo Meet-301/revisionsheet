@@ -221,7 +221,7 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
           </div>
           <div class="form-row" style="grid-template-columns:1fr 1fr">
             <div class="fg"><label>Time Complexity</label><input id="f-tc" placeholder="e.g. O(n), O(n log n)" /></div>
-            <div class="fg"><label>Space Complexity</label><input id="f-sc" placeholder="e.g. O(1), O(n)" /></div>
+            <div class="fg"><label>Auxiliary Space</label><input id="f-sc" placeholder="e.g. O(1), O(n)" /></div>
           </div>
           <div class="form-row" style="grid-template-columns:1fr 1fr">
             <div class="fg"><label>LeetCode URL (optional)</label><input id="f-lc" placeholder="https://leetcode.com/problems/two-sum/" /></div>
@@ -369,7 +369,7 @@ function openNotes(id) {
       <div class="notes-modal-sub">${esc(q.pattern)} &nbsp;·&nbsp; ${esc(q.difficulty)}</div>
       <div class="notes-cx-grid">
         <div><div class="nm-label">Time Complexity</div><input class="nm-input" id="nm-tc" placeholder="e.g. O(n log n)" value="${esc(q.tc||'')}" /></div>
-        <div><div class="nm-label">Space Complexity</div><input class="nm-input" id="nm-sc" placeholder="e.g. O(1)" value="${esc(q.sc||'')}" /></div>
+        <div><div class="nm-label">Auxiliary Space</div><input class="nm-input" id="nm-sc" placeholder="e.g. O(1)" value="${esc(q.sc||'')}" /></div>
       </div>
       <div class="nm-label">Notes</div>
       <textarea class="nm-textarea" id="nm-notes" placeholder="Approach, key insight, edge cases, mistakes made...">${esc(q.notes||'')}</textarea>
